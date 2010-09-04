@@ -1,0 +1,28 @@
+@import "blueprint_screen";
+
+$sim_width: 1280;
+$sim_height: 768;
+
+@mixin screen-element($x, $y, $width, $height) {
+  position: absolute;
+  background: {
+    image: url(/images/content-background.png);
+    repeat: repeat-x;
+  }
+  left: percentage($x / $sim_width);
+  top: percentage($y / $sim_height);
+  width: percentage($width / $sim_width);
+  height: percentage($height / $sim_height);
+}
+
+body {
+  background-color: black;
+}
+
+.content {
+  @include screen-element(32, 64, 1024, 640);
+}
+
+.menu {
+  @include screen-element(992, 32, 256, 448);
+}

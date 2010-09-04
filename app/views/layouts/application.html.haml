@@ -7,4 +7,12 @@
     = javascript_include_tag :defaults
     = csrf_meta_tag
   %body
-    .main_area= yield
+    .content= yield
+    .menu
+      %ul
+        %li Journal
+        %li Items
+        %li Equipment
+        %li Skills
+        %li Status
+        %li Save

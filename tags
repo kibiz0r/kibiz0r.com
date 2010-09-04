@@ -3,6 +3,16 @@ app/controllers/application_controller.rb	app/controllers/application_controller
 app/controllers/overview_controller.rb	app/controllers/overview_controller.rb	//;"	f
 app/helpers/application_helper.rb	app/helpers/application_helper.rb	//;"	f
 app/helpers/overview_helper.rb	app/helpers/overview_helper.rb	//;"	f
+app/stylesheets/blueprint/plugins/buttons/screen.css	app/stylesheets/blueprint/plugins/buttons/screen.css	//;"	f
+app/stylesheets/blueprint/plugins/fancy-type/screen.css	app/stylesheets/blueprint/plugins/fancy-type/screen.css	//;"	f
+app/stylesheets/blueprint/plugins/link-icons/screen.css	app/stylesheets/blueprint/plugins/link-icons/screen.css	//;"	f
+app/stylesheets/blueprint/plugins/rtl/screen.css	app/stylesheets/blueprint/plugins/rtl/screen.css	//;"	f
+app/stylesheets/blueprint/src/forms.css	app/stylesheets/blueprint/src/forms.css	//;"	f
+app/stylesheets/blueprint/src/grid.css	app/stylesheets/blueprint/src/grid.css	//;"	f
+app/stylesheets/blueprint/src/ie.css	app/stylesheets/blueprint/src/ie.css	//;"	f
+app/stylesheets/blueprint/src/print.css	app/stylesheets/blueprint/src/print.css	//;"	f
+app/stylesheets/blueprint/src/reset.css	app/stylesheets/blueprint/src/reset.css	//;"	f
+app/stylesheets/blueprint/src/typography.css	app/stylesheets/blueprint/src/typography.css	//;"	f
 app/views/layouts/application.html.haml	app/views/layouts/application.html.haml	//;"	f
 app/views/overview/index.html.haml	app/views/overview/index.html.haml	//;"	f
 config/boot.rb	config/boot.rb	//;"	f
@@ -26,6 +36,10 @@ if	./public/javascripts/prototype.js	/^if (Prototype.Browser.MobileSafari)$/
 public/javascripts/application.js	public/javascripts/application.js	//;"	f
 public/javascripts/effects.js	public/javascripts/effects.js	//;"	f
 public/javascripts/rails.js	public/javascripts/rails.js	//;"	f
+public/stylesheets/blueprint/ie.css	public/stylesheets/blueprint/ie.css	//;"	f
+public/stylesheets/blueprint/print.css	public/stylesheets/blueprint/print.css	//;"	f
+public/stylesheets/blueprint/screen.css	public/stylesheets/blueprint/screen.css	//;"	f
+public/stylesheets/screen.css	public/stylesheets/screen.css	//;"	f
 test/functional/overview_controller_test.rb	test/functional/overview_controller_test.rb	//;"	f
 test/performance/browsing_test.rb	test/performance/browsing_test.rb	//;"	f
 test/test_helper.rb	test/test_helper.rb	//;"	f
