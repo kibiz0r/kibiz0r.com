@@ -10,9 +10,17 @@
     .content= yield
     .menu
       %ul
-        %li Journal
-        %li Items
-        %li Equipment
-        %li Skills
-        %li Status
-        %li Save
+        - ['Journal', 'Items', 'Equipment', 'Skills', 'Status', 'Save'].each do |menu_item|
+          %li
+            %a{:href => menu_item.downcase}= menu_item
+    .misc
+      %ul
+        %li
+          .left Time
+          .right 28:06
+          .clear
+        %li
+          .left G
+          .right 1024
+          .clear
+    .footer Kibiz0r.com

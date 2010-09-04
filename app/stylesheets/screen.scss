@@ -3,10 +3,10 @@
 $sim_width: 1280;
 $sim_height: 768;
 
-@mixin screen-element($x, $y, $width, $height) {
+@mixin screen-element($x, $y, $width, $height, $type) {
   position: absolute;
   background: {
-    image: url(/images/content-background.png);
+    image: url(/images/#{$type}-background.png);
     repeat: repeat-x;
   }
   left: percentage($x / $sim_width);
@@ -16,13 +16,68 @@ $sim_height: 768;
 }
 
 body {
+  color: white;
   background-color: black;
+  font: {
+    family: OCR A Std;
+    size: 18pt;
+  }
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .content {
-  @include screen-element(32, 64, 1024, 640);
+  @include screen-element(32, 64, 1024, 640, "content");
 }
 
 .menu {
-  @include screen-element(992, 32, 256, 448);
+  @include screen-element(992, 32, 256, 448, "menu");
+  ul {
+    width: 100%;
+    height: 100%;
+    padding: {
+      top: percentage(32 / 448);
+      left: percentage(32 / 256);
+      bottom: percentage(32 / 448);
+      right: percentage(32 / 256);
+    }
+  }
+}
+
+.misc {
+  @include screen-element(992, 565, 256, 107, "misc");
+  ul {
+    padding: {
+      top: percentage(8 / 107);
+      left: percentage(16 / 256);
+      bottom: percentage(8 / 107);
+      right: percentage(16 / 256);
+    }
+  }
+}
+
+.footer {
+  @include screen-element(736, 672, 512, 64, "footer");
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clear {
+  float: clear-both;
 }

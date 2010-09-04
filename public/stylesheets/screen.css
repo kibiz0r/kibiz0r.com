@@ -825,7 +825,19 @@ hr.space {
   clear: both; }
 
 body {
-  background-color: black; }
+  color: white;
+  background-color: black;
+  font-family: OCR A Std;
+  font-size: 18pt; }
+
+ul {
+  margin: 0; }
+
+li {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
 
 .content {
   position: absolute;
@@ -838,9 +850,48 @@ body {
 
 .menu {
   position: absolute;
-  background-image: url(/images/content-background.png);
+  background-image: url(/images/menu-background.png);
   background-repeat: repeat-x;
   left: 77.5%;
   top: 4.167%;
   width: 20%;
   height: 58.333%; }
+  .menu ul {
+    width: 100%;
+    height: 100%;
+    padding-top: 7.143%;
+    padding-left: 12.5%;
+    padding-bottom: 7.143%;
+    padding-right: 12.5%; }
+
+.misc {
+  position: absolute;
+  background-image: url(/images/misc-background.png);
+  background-repeat: repeat-x;
+  left: 77.5%;
+  top: 73.568%;
+  width: 20%;
+  height: 13.932%; }
+  .misc ul {
+    padding-top: 7.477%;
+    padding-left: 6.25%;
+    padding-bottom: 7.477%;
+    padding-right: 6.25%; }
+
+.footer {
+  position: absolute;
+  background-image: url(/images/footer-background.png);
+  background-repeat: repeat-x;
+  left: 57.5%;
+  top: 87.5%;
+  width: 40%;
+  height: 8.333%; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.clear {
+  float: clear-both; }
