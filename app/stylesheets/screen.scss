@@ -34,6 +34,7 @@ li {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 .content {
@@ -43,8 +44,6 @@ a {
 .menu {
   @include screen-element(992, 32, 256, 448, "menu");
   ul {
-    width: 100%;
-    height: 100%;
     padding: {
       top: percentage(32 / 448);
       left: percentage(32 / 256);
@@ -68,6 +67,10 @@ a {
 
 .footer {
   @include screen-element(736, 672, 512, 64, "footer");
+  padding: {
+    top: percentage(8 / $sim_height);
+    left: percentage(16 / $sim_width);
+  }
 }
 
 .left {
