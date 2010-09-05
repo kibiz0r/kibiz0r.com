@@ -845,26 +845,26 @@ a, a:hover, a:visited {
   position: absolute;
   background-image: url(/images/content-background.png);
   background-repeat: repeat-x;
-  left: 2.5%;
-  top: 8.333%;
-  width: 80%;
-  height: 83.333%;
   border-width: 4px;
   border-color: white;
   border-style: ridge;
-  min-height: 640px; }
+  min-height: 540px;
+  left: 32px;
+  top: 64px;
+  bottom: 64px;
+  right: 224px; }
 
 .menu {
   position: absolute;
   background-image: url(/images/menu-background.png);
   background-repeat: repeat-x;
-  left: 77.5%;
-  top: 4.167%;
-  width: 20%;
-  height: 58.333%;
   border-width: 4px;
   border-color: white;
-  border-style: ridge; }
+  border-style: ridge;
+  top: 32px;
+  right: 32px;
+  width: 256px;
+  height: 348px; }
   .menu ul {
     padding-top: 7.143%;
     padding-left: 1.786%;
@@ -883,13 +883,13 @@ a, a:hover, a:visited {
   position: absolute;
   background-image: url(/images/misc-background.png);
   background-repeat: repeat-x;
-  left: 77.5%;
-  top: 73.568%;
-  width: 20%;
-  height: 13.932%;
   border-width: 4px;
   border-color: white;
-  border-style: ridge; }
+  border-style: ridge;
+  right: 32px;
+  bottom: 96px;
+  width: 256px;
+  height: 107px; }
   .misc ul {
     padding-top: 7.477%;
     padding-left: 6.25%;
@@ -900,13 +900,14 @@ a, a:hover, a:visited {
   position: absolute;
   background-image: url(/images/footer-background.png);
   background-repeat: repeat-x;
-  left: 56.25%;
-  top: 87.5%;
-  width: 40%;
-  height: 6.25%;
   border-width: 4px;
   border-color: white;
   border-style: ridge;
+  position: absolute;
+  width: 512px;
+  height: 48px;
+  right: 32px;
+  bottom: 32px;
   padding-top: 1.042%;
   padding-left: 1.25%; }
 
@@ -921,10 +922,10 @@ a, a:hover, a:visited {
 
 .title-bar {
   position: absolute;
-  left: 31.25%;
-  top: 5%;
   width: 617px;
-  height: 40px; }
+  height: 40px;
+  left: 320px;
+  top: 32px; }
   .title-bar .left {
     margin-top: 4px;
     margin-left: 16px;
@@ -936,10 +937,10 @@ a, a:hover, a:visited {
 
 .hp-bar {
   position: absolute;
-  left: 31.25%;
-  top: 15%;
   width: 617px;
   height: 40px;
+  left: 320px;
+  top: 96px;
   background-image: url(/images/hp-bar.png);
   background-repeat: no-repeat; }
   .hp-bar .left {
@@ -953,10 +954,10 @@ a, a:hover, a:visited {
 
 .mp-bar {
   position: absolute;
-  left: 35.938%;
-  top: 18.75%;
   width: 617px;
   height: 40px;
+  left: 368px;
+  top: 120px;
   background-image: url(/images/mp-bar.png);
   background-repeat: no-repeat;
   width: 310px;
@@ -991,7 +992,8 @@ a, a:hover, a:visited {
   width: 90.625%;
   height: 100%;
   padding-top: 32px;
-  left: 3.125%; }
+  left: 32px;
+  right: 32px; }
 
 .summary {
   width: 100%;

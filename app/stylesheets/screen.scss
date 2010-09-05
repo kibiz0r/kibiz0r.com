@@ -3,16 +3,12 @@
 $screen_width: 1280;
 $screen_height: 768;
 
-@mixin screen-element($x, $y, $width, $height, $type) {
+@mixin screen-element($type) {
   position: absolute;
   background: {
     image: url(/images/#{$type}-background.png);
     repeat: repeat-x;
   }
-  left: percentage($x / $screen_width);
-  top: percentage($y / $screen_height);
-  width: percentage($width / $screen_width);
-  height: percentage($height / $screen_height);
   border: {
     width: 4px;
     color: white;
@@ -47,15 +43,23 @@ $content_width: 1024;
 $content_height: 640;
 
 .content {
-  @include screen-element(32, 64, $content_width, $content_height, "content");
-  min-height: 640px;
+  @include screen-element("content");
+  min-height: 540px;
+  left: 32px;
+  top: 64px;
+  bottom: 64px;
+  right: 224px;
 }
 
 $menu_width: 256;
 $menu_height: 448;
 
 .menu {
-  @include screen-element(992, 32, $menu_width, $menu_height, "menu");
+  @include screen-element("menu");
+  top: 32px;
+  right: 32px;
+  width: 256px;
+  height: 348px;
   ul {
     padding: {
       top: percentage(32 / $menu_height);
@@ -83,7 +87,11 @@ $misc_width: 256;
 $misc_height: 107;
 
 .misc {
-  @include screen-element(992, 565, $misc_width, $misc_height, "misc");
+  @include screen-element("misc");
+  right: 32px;
+  bottom: 96px;
+  width: 256px;
+  height: 107px;
   ul {
     padding: {
       top: percentage(8 / $misc_height);
@@ -94,11 +102,13 @@ $misc_height: 107;
   }
 }
 
-$footer_width: 512;
-$footer_height: 48;
-
 .footer {
-  @include screen-element(720, 672, $footer_width, $footer_height, "footer");
+  @include screen-element("footer");
+  position: absolute;
+  width: 512px;
+  height: 48px;
+  right: 32px;
+  bottom: 32px;
   padding: {
     top: percentage(8 / $screen_height);
     left: percentage(16 / $screen_width);
@@ -120,10 +130,8 @@ $footer_height: 48;
 $status_element_width: 617px;
 $status_element_height: 40px;
 
-@mixin status-element($x, $y) {
+@mixin status-element {
   position: absolute;
-  left: percentage($x / $content_width);
-  top: percentage($y / $content_height);
   width: $status_element_width;
   height: $status_element_height;
   .left {
@@ -143,17 +151,23 @@ $status_element_height: 40px;
 }
 
 .title-bar {
-  @include status-element(320, 32);
+  @include status-element;
+  left: 320px;
+  top: 32px;
 }
 
 .hp-bar {
-  @include status-element(320, 96);
+  @include status-element;
+  left: 320px;
+  top: 96px;
   background-image: url(/images/hp-bar.png);
   background-repeat: no-repeat;
 }
 
 .mp-bar {
-  @include status-element(368, 120);
+  @include status-element;
+  left: 368px;
+  top: 120px;
   background-image: url(/images/mp-bar.png);
   background-repeat: no-repeat;
   width: 310px;
@@ -191,7 +205,8 @@ $avatar_height: 256px;
   width: percentage(928 / $content_width);
   height: 100%;
   padding-top: 32px;
-  left: percentage(32 / $content_width);
+  left: 32px;
+  right: 32px;
 }
 
 .summary {

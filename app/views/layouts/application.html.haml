@@ -9,6 +9,18 @@
   %body
     .content
       .sub-content= yield
+    .misc
+      %ul
+        %li
+          .left Uptime
+          .right 28:06
+          .clear
+        %li
+          .left Hits
+          .right 1024
+          .clear
+    .footer
+      %a(href='http://www.kibiz0r.com') Kibiz0r.com
     .menu
       %ul
         %li
@@ -23,15 +35,3 @@
           %a(href='/skills') Skills
         %li.last
           %a(href='/save') Save
-    .misc
-      %ul
-        %li
-          .left Uptime
-          .right 28:06
-          .clear
-        %li
-          .left Hits
-          .right 1024
-          .clear
-    .footer
-      %a(href='http://www.kibiz0r.com') Kibiz0r.com
