@@ -13,6 +13,11 @@ $screen_height: 768;
   top: percentage($y / $screen_height);
   width: percentage($width / $screen_width);
   height: percentage($height / $screen_height);
+  border: {
+    width: 1px;
+    color: white;
+    style: inset;
+  }
 }
 
 body {
@@ -33,7 +38,7 @@ li {
   list-style-type: none;
 }
 
-a {
+a, a:hover {
   text-decoration: none;
   color: white;
 }
@@ -53,9 +58,18 @@ $menu_height: 448;
   ul {
     padding: {
       top: percentage(32 / $menu_height);
-      left: percentage(32 / $menu_width);
+      left: percentage(8 / $menu_height);
       bottom: percentage(32 / $menu_height);
       right: percentage(32 / $menu_width);
+    }
+    li {
+      padding-left: percentage(32 / $menu_width);
+      &:hover {
+        background: {
+          image: url('/images/arrow.png');
+          repeat: no-repeat;
+        }
+      }
     }
     .last {
       position: absolute;
@@ -80,7 +94,7 @@ $misc_height: 107;
 }
 
 $footer_width: 512;
-$footer_height: 64;
+$footer_height: 48;
 
 .footer {
   @include screen-element(736, 672, $footer_width, $footer_height, "footer");
@@ -173,7 +187,7 @@ $avatar_height: 256px;
 
 .sub-content {
   position: absolute;
-  width: percentage(960 / $content_width);
+  width: percentage(928 / $content_width);
   height: 50%;
   top: 320px;
   left: percentage(32 / $content_width);
