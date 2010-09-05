@@ -14,9 +14,9 @@ $screen_height: 768;
   width: percentage($width / $screen_width);
   height: percentage($height / $screen_height);
   border: {
-    width: 1px;
+    width: 4px;
     color: white;
-    style: inset;
+    style: ridge;
   }
 }
 
@@ -97,7 +97,7 @@ $footer_width: 512;
 $footer_height: 48;
 
 .footer {
-  @include screen-element(736, 672, $footer_width, $footer_height, "footer");
+  @include screen-element(720, 672, $footer_width, $footer_height, "footer");
   padding: {
     top: percentage(8 / $screen_height);
     left: percentage(16 / $screen_width);
