@@ -1,7 +1,7 @@
 @import "blueprint_screen";
 
-$sim_width: 1280;
-$sim_height: 768;
+$screen_width: 1280;
+$screen_height: 768;
 
 @mixin screen-element($x, $y, $width, $height, $type) {
   position: absolute;
@@ -9,10 +9,10 @@ $sim_height: 768;
     image: url(/images/#{$type}-background.png);
     repeat: repeat-x;
   }
-  left: percentage($x / $sim_width);
-  top: percentage($y / $sim_height);
-  width: percentage($width / $sim_width);
-  height: percentage($height / $sim_height);
+  left: percentage($x / $screen_width);
+  top: percentage($y / $screen_height);
+  width: percentage($width / $screen_width);
+  height: percentage($height / $screen_height);
 }
 
 body {
@@ -21,6 +21,7 @@ body {
   font: {
     family: OCR A Std;
     size: 18pt;
+    weight: bold;
   }
 }
 
@@ -37,39 +38,55 @@ a {
   color: white;
 }
 
+$content_width: 1024;
+$content_height: 640;
+
 .content {
-  @include screen-element(32, 64, 1024, 640, "content");
+  @include screen-element(32, 64, $content_width, $content_height, "content");
 }
+
+$menu_width: 256;
+$menu_height: 448;
 
 .menu {
-  @include screen-element(992, 32, 256, 448, "menu");
+  @include screen-element(992, 32, $menu_width, $menu_height, "menu");
   ul {
     padding: {
-      top: percentage(32 / 448);
-      left: percentage(32 / 256);
-      bottom: percentage(32 / 448);
-      right: percentage(32 / 256);
+      top: percentage(32 / $menu_height);
+      left: percentage(32 / $menu_width);
+      bottom: percentage(32 / $menu_height);
+      right: percentage(32 / $menu_width);
+    }
+    .last {
+      position: absolute;
+      bottom: percentage(16 / $menu_height);
     }
   }
 }
+
+$misc_width: 256;
+$misc_height: 107;
 
 .misc {
-  @include screen-element(992, 565, 256, 107, "misc");
+  @include screen-element(992, 565, $misc_width, $misc_height, "misc");
   ul {
     padding: {
-      top: percentage(8 / 107);
-      left: percentage(16 / 256);
-      bottom: percentage(8 / 107);
-      right: percentage(16 / 256);
+      top: percentage(8 / $misc_height);
+      left: percentage(16 / $misc_width);
+      bottom: percentage(8 / $misc_height);
+      right: percentage(16 / $misc_width);
     }
   }
 }
 
+$footer_width: 512;
+$footer_height: 64;
+
 .footer {
-  @include screen-element(736, 672, 512, 64, "footer");
+  @include screen-element(736, 672, $footer_width, $footer_height, "footer");
   padding: {
-    top: percentage(8 / $sim_height);
-    left: percentage(16 / $sim_width);
+    top: percentage(8 / $screen_height);
+    left: percentage(16 / $screen_width);
   }
 }
 
@@ -83,4 +100,81 @@ a {
 
 .clear {
   float: clear-both;
+}
+
+$status_element_width: 617px;
+$status_element_height: 40px;
+
+@mixin status-element($x, $y) {
+  position: absolute;
+  left: percentage($x / $content_width);
+  top: percentage($y / $content_height);
+  width: $status_element_width;
+  height: $status_element_height;
+  .left {
+    margin: {
+      top: 4px;
+      left: 16px;
+      bottom: 4px;
+    }
+  }
+  .right {
+    margin: {
+      top: 4px;
+      right: 16px;
+      bottom: 4px;
+    }
+  }
+}
+
+.title-bar {
+  @include status-element(320, 32);
+}
+
+.hp-bar {
+  @include status-element(320, 96);
+  background-image: url(/images/hp-bar.png);
+  background-repeat: no-repeat;
+}
+
+.mp-bar {
+  @include status-element(352, 128);
+  background-image: url(/images/mp-bar.png);
+  background-repeat: no-repeat;
+  width: 310px;
+  height: 30px;
+  font-size: 18px;
+  .left {
+    margin: {
+      top: 3px;
+      bottom: 3px;
+    }
+  }
+  .right {
+    margin: {
+      top: 3px;
+      bottom: 3px;
+    }
+  }
+}
+
+$avatar_width: 256px;
+$avatar_height: 256px;
+
+.avatar {
+  background-image: url(/images/avatar.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 32px;
+  top: 32px;
+  width: $avatar_width;
+  height: $avatar_height;
+}
+
+.sub-content {
+  position: absolute;
+  width: percentage(960 / $content_width);
+  height: 50%;
+  top: 320px;
+  left: percentage(32 / $content_width);
 }

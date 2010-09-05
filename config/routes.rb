@@ -1,5 +1,5 @@
 Kibiz0rCom::Application.routes.draw do
-  root :controller => 'overview', :action => 'index'
+  root :controller => 'overview', :action => 'status'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

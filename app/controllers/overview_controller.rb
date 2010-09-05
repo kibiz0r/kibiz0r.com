@@ -1,4 +1,4 @@
 class OverviewController < ApplicationController
-  def index
+  def status
   end
 end

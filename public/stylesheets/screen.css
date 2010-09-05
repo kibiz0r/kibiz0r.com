@@ -828,7 +828,8 @@ body {
   color: white;
   background-color: black;
   font-family: OCR A Std;
-  font-size: 18pt; }
+  font-size: 18pt;
+  font-weight: bold; }
 
 ul {
   margin: 0; }
@@ -862,6 +863,9 @@ a {
     padding-left: 12.5%;
     padding-bottom: 7.143%;
     padding-right: 12.5%; }
+    .menu ul .last {
+      position: absolute;
+      bottom: 3.571%; }
 
 .misc {
   position: absolute;
@@ -896,3 +900,77 @@ a {
 
 .clear {
   float: clear-both; }
+
+.title-bar {
+  position: absolute;
+  left: 31.25%;
+  top: 5%;
+  width: 617px;
+  height: 40px; }
+  .title-bar .left {
+    margin-top: 4px;
+    margin-left: 16px;
+    margin-bottom: 4px; }
+  .title-bar .right {
+    margin-top: 4px;
+    margin-right: 16px;
+    margin-bottom: 4px; }
+
+.hp-bar {
+  position: absolute;
+  left: 31.25%;
+  top: 15%;
+  width: 617px;
+  height: 40px;
+  background-image: url(/images/hp-bar.png);
+  background-repeat: no-repeat; }
+  .hp-bar .left {
+    margin-top: 4px;
+    margin-left: 16px;
+    margin-bottom: 4px; }
+  .hp-bar .right {
+    margin-top: 4px;
+    margin-right: 16px;
+    margin-bottom: 4px; }
+
+.mp-bar {
+  position: absolute;
+  left: 34.375%;
+  top: 20%;
+  width: 617px;
+  height: 40px;
+  background-image: url(/images/mp-bar.png);
+  background-repeat: no-repeat;
+  width: 310px;
+  height: 30px;
+  font-size: 18px; }
+  .mp-bar .left {
+    margin-top: 4px;
+    margin-left: 16px;
+    margin-bottom: 4px; }
+  .mp-bar .right {
+    margin-top: 4px;
+    margin-right: 16px;
+    margin-bottom: 4px; }
+  .mp-bar .left {
+    margin-top: 3px;
+    margin-bottom: 3px; }
+  .mp-bar .right {
+    margin-top: 3px;
+    margin-bottom: 3px; }
+
+.avatar {
+  background-image: url(/images/avatar.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 32px;
+  top: 32px;
+  width: 256px;
+  height: 256px; }
+
+.sub-content {
+  position: absolute;
+  width: 93.75%;
+  height: 50%;
+  top: 320px;
+  left: 3.125%; }

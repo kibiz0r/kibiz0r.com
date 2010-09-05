@@ -10,17 +10,26 @@
     .content= yield
     .menu
       %ul
-        - ['Journal', 'Items', 'Equipment', 'Skills', 'Status', 'Save'].each do |menu_item|
-          %li
-            %a{:href => menu_item.downcase}= menu_item
+        %li
+          %a(href='status') Status
+        %li
+          %a(href='journal') Journal
+        %li
+          %a(href='items') Items
+        %li
+          %a(href='equipment') Equipment
+        %li
+          %a(href='skills') Skills
+        %li.last
+          %a(href='save') Save
     .misc
       %ul
         %li
-          .left Time
+          .left Uptime
           .right 28:06
           .clear
         %li
-          .left G
+          .left Hits
           .right 1024
           .clear
     .footer Kibiz0r.com
