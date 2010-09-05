@@ -837,7 +837,7 @@ ul {
 li {
   list-style-type: none; }
 
-a, a:hover {
+a, a:hover, a:visited {
   text-decoration: none;
   color: white; }
 
@@ -988,6 +988,13 @@ a, a:hover {
 .sub-content {
   position: absolute;
   width: 90.625%;
-  height: 50%;
-  top: 320px;
+  height: 100%;
+  padding-top: 32px;
   left: 3.125%; }
+  .sub-content.half {
+    height: 50%;
+    top: 320px; }
+
+h1 {
+  color: white;
+  font-size: 32pt; }

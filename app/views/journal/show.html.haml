@@ -1,0 +1,3 @@
+.sub-content
+  %h1= link_to @journal.title, @journal
+  %p= auto_link simple_format(@journal.body), :html => { :target => '_blank' }
