@@ -824,6 +824,10 @@ hr.space {
 .clear {
   clear: both; }
 
+@font-face {
+  font-family: OCR A Std;
+  src: url("OCR A Std.otf"); }
+
 body {
   color: white;
   background-color: black;

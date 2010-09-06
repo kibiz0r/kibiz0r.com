@@ -1,5 +1,10 @@
 @import "blueprint_screen";
 
+@font-face {
+  font-family: OCR A Std;
+  src: url("OCR A Std.otf");
+}
+
 $screen_width: 1280;
 $screen_height: 768;
 
