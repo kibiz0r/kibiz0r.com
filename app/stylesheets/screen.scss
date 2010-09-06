@@ -1,8 +1,11 @@
 @import "blueprint_screen";
 
 @font-face {
-  font-family: OCR A Std;
-  src: url("OCR A Std.otf");
+	font-family: 'OCR A Std';
+	src: url('ocr_a_std-webfont.eot');
+	src: local('☺'), url('ocr_a_std-webfont.woff') format('woff'), url('ocr_a_std-webfont.ttf') format('truetype'), url('ocr_a_std-webfont.svg#webfontalXoyinI') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 $screen_width: 1280;
