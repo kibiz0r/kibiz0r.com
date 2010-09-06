@@ -10,6 +10,7 @@ class SkillsController < ApplicationController
       ['Java', 2],
       ['Visual Basic', 2],
       ['F#', 1],
+      ['PHP', 2],
       ['Ruby', 3],
       ['Python', 2],
       ['Boo', 2],
