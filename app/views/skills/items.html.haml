@@ -1,0 +1,6 @@
+= render 'skills_menu'
+.skills-content
+  - @items.sort.each_slice(8) do |items|
+    %ul
+      - items.each do |item, proficiency|
+        %li(class="proficiency-#{proficiency}")= item

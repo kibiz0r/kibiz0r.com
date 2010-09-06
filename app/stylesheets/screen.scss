@@ -54,6 +54,21 @@ $content_height: 640;
 $menu_width: 256;
 $menu_height: 448;
 
+@mixin selectable {
+  &.selected {
+    background: {
+      image: url(/images/selected-arrow.png);
+      repeat: no-repeat;
+    }
+  }
+  &:hover {
+    background: {
+      image: url(/images/hover-arrow.png);
+      repeat: no-repeat;
+    }
+  }
+}
+
 .menu {
   @include screen-element("menu");
   top: 32px;
@@ -69,12 +84,7 @@ $menu_height: 448;
     }
     li {
       padding-left: 32px;
-      &:hover {
-        background: {
-          image: url('/images/hover-arrow.png');
-          repeat: no-repeat;
-        }
-      }
+      @include selectable;
     }
     .last {
       position: absolute;
@@ -227,12 +237,19 @@ h1 {
   left: 0px;
   right: 0px;
   height: 32px;
+  padding: 0;
   ul {
-    padding: 0;
+    padding: {
+      top: 0;
+      left: 8px;
+      bottom: 0;
+      right: 8px;
+    }
     li {
       float: left;
       margin-right: 32px;
       padding-left: 32px;
+      @include selectable;
     }
   }
 }
@@ -267,9 +284,3 @@ h1 {
   @include proficiency(3);
 }
 
-.selected {
-  background: {
-    image: url(/images/selected-arrow.png);
-    repeat: no-repeat;
-  }
-}

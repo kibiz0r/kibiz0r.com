@@ -872,8 +872,11 @@ a, a:hover, a:visited {
     padding-right: 4px; }
     .menu ul li {
       padding-left: 32px; }
+      .menu ul li.selected {
+        background-image: url(/images/selected-arrow.png);
+        background-repeat: no-repeat; }
       .menu ul li:hover {
-        background-image: url("/images/hover-arrow.png");
+        background-image: url(/images/hover-arrow.png);
         background-repeat: no-repeat; }
     .menu ul .last {
       position: absolute;
@@ -1015,13 +1018,23 @@ h1 {
   top: 32px;
   left: 0px;
   right: 0px;
-  height: 32px; }
+  height: 32px;
+  padding: 0; }
   .skills-menu ul {
-    padding: 0; }
+    padding-top: 0;
+    padding-left: 8px;
+    padding-bottom: 0;
+    padding-right: 8px; }
     .skills-menu ul li {
       float: left;
       margin-right: 32px;
       padding-left: 32px; }
+      .skills-menu ul li.selected {
+        background-image: url(/images/selected-arrow.png);
+        background-repeat: no-repeat; }
+      .skills-menu ul li:hover {
+        background-image: url(/images/hover-arrow.png);
+        background-repeat: no-repeat; }
 
 .skills-content {
   margin-top: 32px;
@@ -1044,8 +1057,4 @@ h1 {
 .proficiency-3 {
   padding-left: 56px;
   background-image: url(/images/proficiency-3.png);
-  background-repeat: no-repeat; }
-
-.selected {
-  background-image: url(/images/selected-arrow.png);
   background-repeat: no-repeat; }
