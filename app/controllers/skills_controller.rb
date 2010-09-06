@@ -36,9 +36,9 @@ class SkillsController < ApplicationController
   end
 
   def misc
-    @items = [['Sailing', 3],
+    @items = [['Sailing', 2],
       ['Guitar', 1],
-      ['Origami', 2]]
+      ['Origami', 1]]
     render 'items'
   end
 end
