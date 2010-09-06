@@ -1,0 +1,11 @@
+= render 'items_menu'
+.items-content
+  - @items.sort.each_slice(8) do |items|
+    %ul
+      - items.each do |item, link, note|
+        %li.item
+          %img(src="/images/#{item.downcase.gsub(' ', '-')}.png")
+          %a.item-name(href=link target='_blank')= item
+          .clear
+          .note
+            %p= note

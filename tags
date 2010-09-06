@@ -1,0 +1,70 @@
+Copyright	./public/javascripts/controls.js	/^\/\/ Copyright (c) 2005-2008 Thomas Fuchs (http:\//
+F	./.git/objects/e6/7f0fa02e474e49ce3781c66c06cda2f1d8c55c	/^x­VÁn7íÙ_1‘–‹€$(Pq"§h‘Ò/
+U	./.git/objects/16/7fc4a107357c119d9da87f6dd7b41476a5970c	/^zž´X–I>BŠœ~—Ì„\/Ð±9ßË·}×Ã\\ùrèÎãì]Az>>Ö}/
+a	./app/views/layouts/application.html.haml	/^      %a(href='http:\/\/www.kibiz0r.com') Kibiz0r./
+each_slice	./app/views/items/items.html.haml	/^  - @items.sort.each_slice(8) do |items|$/
+element	./app/stylesheets/screen.scss	/^@mixin screen-element($type) {$/
+expand_path	./test/test_helper.rb	/^require File.expand_path(File.dirname(__FILE__) + /
+function	./public/javascripts/dragdrop.js	/^Element.isParent = function(child, element) {$/
+if	./public/javascripts/prototype.js	/^if (Prototype.Browser.MobileSafari)$/
+join	./config/environment.rb	/^require File.join(File.dirname(__FILE__), 'boot')$/
+proficiency	./app/stylesheets/screen.scss	/^@mixin proficiency($level) {$/
+test/unit/helpers/skills_helper_test.rb	test/unit/helpers/skills_helper_test.rb	//;"	f
+test/unit/helpers/items_helper_test.rb	test/unit/helpers/items_helper_test.rb	//;"	f
+test/performance/browsing_test.rb	test/performance/browsing_test.rb	//;"	f
+test/functional/skills_controller_test.rb	test/functional/skills_controller_test.rb	//;"	f
+test/functional/items_controller_test.rb	test/functional/items_controller_test.rb	//;"	f
+public/stylesheets/screen.css	public/stylesheets/screen.css	//;"	f
+public/stylesheets/blueprint/print.css	public/stylesheets/blueprint/print.css	//;"	f
+public/stylesheets/blueprint/ie.css	public/stylesheets/blueprint/ie.css	//;"	f
+public/javascripts/effects.js	public/javascripts/effects.js	//;"	f
+public/javascripts/application.js	public/javascripts/application.js	//;"	f
+db/seeds.rb	db/seeds.rb	//;"	f
+db/schema.rb	db/schema.rb	//;"	f
+db/migrate/20100905014435_create_journals.rb	db/migrate/20100905014435_create_journals.rb	//;"	f
+config/routes.rb	config/routes.rb	//;"	f
+config/locales/en.yml	config/locales/en.yml	//;"	f
+config/initializers/session_store.rb	config/initializers/session_store.rb	//;"	f
+config/initializers/new_rails_defaults.rb	config/initializers/new_rails_defaults.rb	//;"	f
+config/initializers/mime_types.rb	config/initializers/mime_types.rb	//;"	f
+config/initializers/inflections.rb	config/initializers/inflections.rb	//;"	f
+config/initializers/backtrace_silencers.rb	config/initializers/backtrace_silencers.rb	//;"	f
+config/environments/test.rb	config/environments/test.rb	//;"	f
+config/environments/production.rb	config/environments/production.rb	//;"	f
+config/environments/development.rb	config/environments/development.rb	//;"	f
+config/database.yml	config/database.yml	//;"	f
+config/boot.rb	config/boot.rb	//;"	f
+app/views/skills/items.html.haml	app/views/skills/items.html.haml	//;"	f
+app/views/skills/_skills_menu.html.haml	app/views/skills/_skills_menu.html.haml	//;"	f
+app/views/overview/status.html.haml	app/views/overview/status.html.haml	//;"	f
+app/views/overview/skills.html.haml	app/views/overview/skills.html.haml	//;"	f
+app/views/overview/items.html.haml	app/views/overview/items.html.haml	//;"	f
+app/views/overview/equipment.html.haml	app/views/overview/equipment.html.haml	//;"	f
+app/views/journal/show.html.haml	app/views/journal/show.html.haml	//;"	f
+app/views/journal/new.html.haml	app/views/journal/new.html.haml	//;"	f
+app/views/journal/index.html.haml	app/views/journal/index.html.haml	//;"	f
+app/views/journal/edit.html.haml	app/views/journal/edit.html.haml	//;"	f
+app/views/journal/_journal.html.haml	app/views/journal/_journal.html.haml	//;"	f
+app/views/journal/_form.html.haml	app/views/journal/_form.html.haml	//;"	f
+app/views/items/_items_menu.html.haml	app/views/items/_items_menu.html.haml	//;"	f
+app/stylesheets/blueprint/src/typography.css	app/stylesheets/blueprint/src/typography.css	//;"	f
+app/stylesheets/blueprint/src/reset.css	app/stylesheets/blueprint/src/reset.css	//;"	f
+app/stylesheets/blueprint/src/print.css	app/stylesheets/blueprint/src/print.css	//;"	f
+app/stylesheets/blueprint/src/ie.css	app/stylesheets/blueprint/src/ie.css	//;"	f
+app/stylesheets/blueprint/src/grid.css	app/stylesheets/blueprint/src/grid.css	//;"	f
+app/stylesheets/blueprint/src/forms.css	app/stylesheets/blueprint/src/forms.css	//;"	f
+app/stylesheets/blueprint/plugins/rtl/screen.css	app/stylesheets/blueprint/plugins/rtl/screen.css	//;"	f
+app/stylesheets/blueprint/plugins/link-icons/screen.css	app/stylesheets/blueprint/plugins/link-icons/screen.css	//;"	f
+app/stylesheets/blueprint/plugins/fancy-type/screen.css	app/stylesheets/blueprint/plugins/fancy-type/screen.css	//;"	f
+app/stylesheets/blueprint/plugins/buttons/screen.css	app/stylesheets/blueprint/plugins/buttons/screen.css	//;"	f
+app/models/journal.rb	app/models/journal.rb	//;"	f
+app/helpers/skills_helper.rb	app/helpers/skills_helper.rb	//;"	f
+app/helpers/overview_helper.rb	app/helpers/overview_helper.rb	//;"	f
+app/helpers/journal_helper.rb	app/helpers/journal_helper.rb	//;"	f
+app/helpers/items_helper.rb	app/helpers/items_helper.rb	//;"	f
+app/helpers/application_helper.rb	app/helpers/application_helper.rb	//;"	f
+app/controllers/skills_controller.rb	app/controllers/skills_controller.rb	//;"	f
+app/controllers/overview_controller.rb	app/controllers/overview_controller.rb	//;"	f
+app/controllers/journal_controller.rb	app/controllers/journal_controller.rb	//;"	f
+app/controllers/items_controller.rb	app/controllers/items_controller.rb	//;"	f
+app/controllers/application_controller.rb	app/controllers/application_controller.rb	//;"	f

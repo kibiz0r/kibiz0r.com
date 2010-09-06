@@ -1,6 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
   map.root :controller => 'overview', :action => 'status'
   map.resources :journal
+  map.connect 'items/:action', :controller => 'items'
   map.connect 'skills/:action', :controller => 'skills'
   map.connect ':action', :controller => 'overview'
   # The priority is based upon order of creation: first created -> highest priority.

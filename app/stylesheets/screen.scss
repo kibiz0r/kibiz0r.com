@@ -231,8 +231,8 @@ h1 {
   font-size: 32pt;
 }
 
-.skills-menu {
-  @include screen-element("skills-menu");
+@mixin browsable-menu {
+  @include screen-element("browsable-menu");
   top: 32px;
   left: 0px;
   right: 0px;
@@ -254,7 +254,15 @@ h1 {
   }
 }
 
-.skills-content {
+.items-menu {
+  @include browsable-menu;
+}
+
+.skills-menu {
+  @include browsable-menu;
+}
+
+@mixin browsable-content {
   margin-top: 32px;
   padding-top: 32px;
   ul {
@@ -262,6 +270,28 @@ h1 {
     padding: 0;
     margin-right: 32px;
   }
+}
+
+.items-content {
+  @include browsable-content;
+  img {
+    float: left;
+    margin: {
+      left: 8px;
+      right: 8px;
+    }
+  }
+}
+
+.item-name {
+  float: left;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.skills-content {
+  @include browsable-content;
 }
 
 @mixin proficiency($level) {
@@ -284,3 +314,9 @@ h1 {
   @include proficiency(3);
 }
 
+.note {
+  padding-left: 64px;
+  p {
+    margin: 0;
+  }
+}

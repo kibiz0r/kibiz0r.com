@@ -1,0 +1,7 @@
+.items-menu
+  %ul
+    - ['General', 'Job Medals'].each do |menu_item|
+      - if controller.action_name == menu_item.gsub(' ', '_').downcase
+        %li.selected= link_to menu_item, :controller => 'items', :action => menu_item.gsub(' ', '_').downcase
+      - else
+        %li= link_to menu_item, :controller => 'items', :action => menu_item.gsub(' ', '_').downcase
