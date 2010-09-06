@@ -1,0 +1,7 @@
+.skills-menu
+  %ul
+    - ['Languages', 'Technologies'].each do |menu_item|
+      - if controller.action_name == menu_item.downcase
+        %li.selected= link_to menu_item, :controller => 'skills', :action => menu_item.downcase
+      - else
+        %li= link_to menu_item, :controller => 'skills', :action => menu_item.downcase

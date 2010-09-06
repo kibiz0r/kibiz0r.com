@@ -21,15 +21,13 @@
       %a(href='http://www.kibiz0r.com') Kibiz0r.com
     .menu
       %ul
-        %li
-          %a(href='/status') Status
-        %li
-          %a(href='/journal') Journal
-        %li
-          %a(href='/items') Items
-        %li
-          %a(href='/equipment') Equipment
-        %li
-          %a(href='/skills') Skills
-        %li.last
-          %a(href='/save') Save
+        - ['Status', 'Journal', 'Items', 'Equipment', 'Skills', 'Save'].each do |menu_item|
+          - if controller.controller_name == menu_item.downcase || controller.action_name == menu_item.downcase
+            %li.selected
+              %a(href="/#{menu_item.downcase}")= menu_item
+          - elsif menu_item == 'Save'
+            %li.last
+              %a(href="/#{menu_item.downcase}")= menu_item
+          - else
+            %li
+              %a(href="/#{menu_item.downcase}")= menu_item
