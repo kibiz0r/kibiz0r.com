@@ -1,0 +1,23 @@
+.save-location
+  %ul
+    %li.selected= link_to 'Résumé', :controller => 'overview', :action => 'save'
+.save-content
+  %ul
+    %li.save-block
+      %a(href='/resume.pdf')
+        %img(src='/images/save-pdf.png')
+        .save-block-content
+          Level: --
+          Time: --:--
+    %li.save-block
+      %a(href='/resume.doc')
+        %img(src='/images/save-doc.png')
+        .save-block-content
+          Level: --
+          Time: --:--
+    %li.save-block
+      %a(href='/resume.odt')
+        %img(src='/images/save-odt.png')
+        .save-block-content
+          Level: --
+          Time: --:--

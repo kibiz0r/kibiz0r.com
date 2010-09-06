@@ -23,11 +23,16 @@
       %ul
         - ['Status', 'Journal', 'Items', 'Skills', 'Save'].each do |menu_item|
           - if controller.controller_name == menu_item.downcase || controller.action_name == menu_item.downcase
-            %li.selected
-              %a(href="/#{menu_item.downcase}")= menu_item
-          - elsif menu_item == 'Save'
-            %li.last
-              %a(href="/#{menu_item.downcase}")= menu_item
+            - if menu_item == 'Save'
+              %li.selected.last
+                %a(href="/#{menu_item.downcase}")= menu_item
+            - else
+              %li.selected
+                %a(href="/#{menu_item.downcase}")= menu_item
           - else
-            %li
-              %a(href="/#{menu_item.downcase}")= menu_item
+            - if menu_item == 'Save'
+              %li.last
+                %a(href="/#{menu_item.downcase}")= menu_item
+            - else
+              %li
+                %a(href="/#{menu_item.downcase}")= menu_item

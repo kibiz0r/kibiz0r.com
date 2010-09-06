@@ -320,3 +320,55 @@ h1 {
     margin: 0;
   }
 }
+
+.save-location {
+  @include browsable-menu;
+  background-image: url(/images/save-location-background.png);
+  height: 88px;
+  width: 256px;
+  left: 0;
+  top: 32px;
+  ul {
+    padding: {
+      top: 24px;
+      left: 8px;
+    }
+    li {
+      @include selectable;
+    }
+  }
+}
+
+.save-content {
+  @include screen-element('save-content');
+  height: 384px;
+  left: 288px;
+  top: 64px;
+  right: 0;
+  ul {
+    padding: 0;
+  }
+}
+
+.save-block {
+  background: {
+    image: url(/images/save-block-background.png);
+    repeat: repeat-x;
+  }
+  height: 128px;
+  width: 100%;
+  padding: {
+    top: 0;
+    bottom: 0;
+  }
+  margin: 0;
+  img {
+    margin: 16px;
+    float: left;
+  }
+}
+
+.save-block-content {
+  margin-top: 48px;
+  float: left;
+}

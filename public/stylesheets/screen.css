@@ -1108,3 +1108,75 @@ h1 {
   padding-left: 64px; }
   .note p {
     margin: 0; }
+
+.save-location {
+  position: absolute;
+  background-image: url(/images/browsable-menu-background.png);
+  background-repeat: repeat-x;
+  border-width: 4px;
+  border-color: white;
+  border-style: ridge;
+  top: 32px;
+  left: 0px;
+  right: 0px;
+  height: 32px;
+  padding: 0;
+  background-image: url(/images/save-location-background.png);
+  height: 88px;
+  width: 256px;
+  left: 0;
+  top: 32px; }
+  .save-location ul {
+    padding-top: 0;
+    padding-left: 8px;
+    padding-bottom: 0;
+    padding-right: 8px; }
+    .save-location ul li {
+      float: left;
+      margin-right: 32px;
+      padding-left: 32px; }
+      .save-location ul li.selected {
+        background-image: url(/images/selected-arrow.png);
+        background-repeat: no-repeat; }
+      .save-location ul li:hover {
+        background-image: url(/images/hover-arrow.png);
+        background-repeat: no-repeat; }
+  .save-location ul {
+    padding-top: 24px;
+    padding-left: 8px; }
+    .save-location ul li.selected {
+      background-image: url(/images/selected-arrow.png);
+      background-repeat: no-repeat; }
+    .save-location ul li:hover {
+      background-image: url(/images/hover-arrow.png);
+      background-repeat: no-repeat; }
+
+.save-content {
+  position: absolute;
+  background-image: url(/images/save-content-background.png);
+  background-repeat: repeat-x;
+  border-width: 4px;
+  border-color: white;
+  border-style: ridge;
+  height: 384px;
+  left: 288px;
+  top: 64px;
+  right: 0; }
+  .save-content ul {
+    padding: 0; }
+
+.save-block {
+  background-image: url(/images/save-block-background.png);
+  background-repeat: repeat-x;
+  height: 128px;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0; }
+  .save-block img {
+    margin: 16px;
+    float: left; }
+
+.save-block-content {
+  margin-top: 48px;
+  float: left; }
